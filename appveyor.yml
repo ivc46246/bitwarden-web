@@ -74,8 +74,9 @@ build_script:
     }
 - cmd: npm install
 - cmd: npm run build:prod
+- cmd: ls -al build
 - cmd: ls -al build/app
-- cmd: find build/app -iname \*.*
+- cmd: find build/app *.*
 
 after_build:
 - sh: |
@@ -85,5 +86,5 @@ after_build:
     fi
 
 artifacts:
-  - path: app\build\
+  - path: app
     name: final-app
