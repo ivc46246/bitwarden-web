@@ -76,7 +76,6 @@ build_script:
 - cmd: npm run build:prod
 - cmd: ls -al build
 - cmd: ls -al build/app
-- cmd: find build/app *.*
 
 after_build:
 - sh: |
