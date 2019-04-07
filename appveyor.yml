@@ -74,6 +74,7 @@ build_script:
     }
 - cmd: npm install
 - cmd: npm run build:prod
+- cmd: ls -al
 
 after_build:
 - sh: |
