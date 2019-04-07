@@ -85,5 +85,5 @@ after_build:
     fi
 
 artifacts:
-  - path: app
+  - path: build
     name: final-app
