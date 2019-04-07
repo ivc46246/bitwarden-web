@@ -74,7 +74,8 @@ build_script:
     }
 - cmd: npm install
 - cmd: npm run build:prod
-- cmd: ls -al
+- cmd: ls -al build
+- cmd: find . -iname \vendor.*.*
 
 after_build:
 - sh: |
