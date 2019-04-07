@@ -81,3 +81,7 @@ after_build:
     then
       docker logout
     fi
+
+artifacts:
+  - path: app\build\
+    name: final-app
